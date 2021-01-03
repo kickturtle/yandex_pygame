@@ -25,7 +25,7 @@ def ending():
 
 
 def intro():
-    intro_screen = pygame.image.load('data/pixel_mando (2).jpg')
+    intro_screen = pygame.image.load('data/sprites_for_mando_game/pixel_mando (2).jpg')
     intro_screen = pygame.transform.scale(intro_screen, (width, height))
     screen.blit(intro_screen, (0, 0))
     font = pygame.font.Font(None, 100)
@@ -61,19 +61,19 @@ def load_level(filename):
 
 
 class Tile(pygame.sprite.Sprite):
-    tile_images = {'floor': pygame.image.load('data/map_things_floor.jpg'),
-                   'lukefloor': pygame.image.load('data/map_things_floor with luke.png'),
-                   'wallblock': pygame.image.load('data/map_things_wall_block.png'),
-                   'wallH': pygame.image.load('data/map_things_wall_H.jpg'),
-                   'wall_': pygame.image.load('data/map_things_wall__.jpg'),
-                   'wall]': pygame.image.load('data/map_things_wall_].jpg'),
-                   'wall[': pygame.image.load('data/map_things_wall_[.jpg'),
-                   'wallcornl': pygame.image.load('data/map_things_wall_cornleft.jpg'),
-                   'wallcornr': pygame.image.load('data/map_things_wall_cornright.jpg'),
-                   'wallupcornl': pygame.image.load('data/map_things_wall_upcornleft.jpg'),
-                   'wallupcornr': pygame.image.load('data/map_things_wall_upcornright.jpg'),
-                   'lukewall': pygame.image.load('data/map_things_wall with luke.png'),
-                   'hole': pygame.image.load('data/map_things_hole.jpg')}
+    tile_images = {'floor': pygame.image.load('data/sprites_for_mando_game/map_things_floor.jpg'),
+                   'lukefloor': pygame.image.load('data/sprites_for_mando_game/map_things_floor with luke.png'),
+                   'wallblock': pygame.image.load('data/sprites_for_mando_game/map_things_wall_block.png'),
+                   'wallH': pygame.image.load('data/sprites_for_mando_game/map_things_wall_H.jpg'),
+                   'wall_': pygame.image.load('data/sprites_for_mando_game/map_things_wall__.jpg'),
+                   'wall]': pygame.image.load('data/sprites_for_mando_game/map_things_wall_].jpg'),
+                   'wall[': pygame.image.load('data/sprites_for_mando_game/map_things_wall_[.jpg'),
+                   'wallcornl': pygame.image.load('data/sprites_for_mando_game/map_things_wall_cornleft.jpg'),
+                   'wallcornr': pygame.image.load('data/sprites_for_mando_game/map_things_wall_cornright.jpg'),
+                   'wallupcornl': pygame.image.load('data/sprites_for_mando_game/map_things_wall_upcornleft.jpg'),
+                   'wallupcornr': pygame.image.load('data/sprites_for_mando_game/map_things_wall_upcornright.jpg'),
+                   'lukewall': pygame.image.load('data/sprites_for_mando_game/map_things_wall with luke.png'),
+                   'hole': pygame.image.load('data/sprites_for_mando_game/map_things_hole.jpg')}
 
     def __init__(self, tile_type, x, y):
         super().__init__(all_sprites, tiles_group)
@@ -84,7 +84,7 @@ class Tile(pygame.sprite.Sprite):
 
 
 class Player(pygame.sprite.Sprite):
-    player_image = pygame.image.load('data/pix_mando_100.png')
+    player_image = pygame.image.load('data/sprites_for_mando_game/pix_mando_100.png')
 
     def __init__(self, level, x, y):
         super().__init__(all_sprites, player_group)
